@@ -11,3 +11,6 @@ opencv-python
 scipy
 diffusers
 tqdm
+urllib3
+zipfile
+requests
