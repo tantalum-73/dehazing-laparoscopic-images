@@ -17,6 +17,37 @@ Conventional dehazing methods (e.g., Dark Channel Prior) rely on fixed assumptio
 - Using unpaired image-to-image translation.
 - Introducing a novel hybrid of CycleGAN and a diffusion model (UNet2D).
 
+## 📊 Dataset: DeSmoke-LAP
+
+This project utilizes the [DeSmoke-LAP dataset](https://www.ucl.ac.uk/interventional-surgical-sciences/weiss-open-research/weiss-open-data-server/desmoke-lap), a publicly available benchmark designed for developing and evaluating smoke removal algorithms in laparoscopic surgery.&#8203;:contentReference[oaicite:0]{index=0}
+
+### 📁 Dataset Composition
+
+- **Source**: 10 robot-assisted laparoscopic hysterectomy procedure videos.
+- **Frame Extraction**: Videos were decomposed into frames at 1 frame per second (fps).
+- **Image Selection**: From each video:
+  - 300 hazy images
+  - 300 clear images  
+  These were selected based on manual observation of electrocauterisation events.
+- **Test Clips**: Short video clips of 50 frames from each procedure were extracted and used for testing.
+- **Evaluation**:
+  - 5-fold cross-validation was performed for all methods.
+  - Quantitative evaluation was done using referenceless metrics.
+  - Qualitative evaluation was conducted through surveys completed by surgeons.
+
+### 📥 Download & License
+
+- **Download**: The dataset is available from the [UCL WEISS Open Data Server](https://www.ucl.ac.uk/interventional-surgical-sciences/weiss-open-research/weiss-open-data-server/desmoke-lap).
+- **License**: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+
+
+### 📚 Citation
+
+> Pan, Y., Bano, S., Vasconcelos, F., Park, H., Jeong, T. T., & Stoyanov, D. (2022).  
+> *DeSmoke-LAP: Improved unpaired image-to-image translation for desmoking in laparoscopic surgery*.  
+> International Journal of Computer Assisted Radiology and Surgery.  
+> [https://doi.org/10.1007/s11548-022-02595-2](https://doi.org/10.1007/s11548-022-02595-2)
+
 ## 🚀 Key Contributions
 
 - 🔁 **CycleGAN Baseline:** Learns mapping between hazy and clear images using unpaired training data.
