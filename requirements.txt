@@ -1,0 +1,12 @@
+# requirements.txt
+
+torch
+pytorch-lightning
+torchvision
+matplotlib
+Pillow
+numpy
+scikit-image
+opencv-python
+scipy
+diffusers
