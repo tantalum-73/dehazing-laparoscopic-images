@@ -96,13 +96,13 @@ This project utilizes the [DeSmoke-LAP dataset](https://www.ucl.ac.uk/interventi
 1. Clone the Repository:
 ```bash
 git clone https://github.com/tantalum-73/dehazing-laparoscopic-images.git
-cd dehazing-laparoscopic-images
+cd dehazing-laparoscopic-images/Code
 ```
 2. Set Up the Environment:
    Ensure you have Python 3.7 or higher installed. It's recommended to use a virtual environment.
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 ```
 3. Install Dependencies
 ```bash
